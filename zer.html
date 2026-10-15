@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>eTravel - Account Settings</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* =======================
+   NAVIGATION BAR
+======================= */
+
+header{
+    width:100%;
+    height:60px;
+    background:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 35px;
+    box-shadow:0 2px 5px rgba(0,0,0,.08);
+}
+
+.left{
+    display:flex;
+    align-items:center;
+}
+
+.logo{
+    height:38px;
+    margin-right:40px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#000;
+    margin-right:40px;
+    font-size:16px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#0047ff;
+}
+
+.right{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.right select{
+    padding:6px 10px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    font-size:14px;
+}
+
+.ph-logo{
+    height:45px;
+}
+
+/* =======================
+   CONTENT
+======================= */
+
+.container{
+    width:900px;
+    margin:40px auto;
+    background:#fff;
+    padding:40px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+h1{
+    font-size:32px;
+    margin-bottom:25px;
+}
+
+.profile{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.profile img{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.section-title{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:30px 0 20px;
+}
+
+.section-title h2{
+    color:#0056ff;
+    font-size:24px;
+}
+
+.edit{
+    font-size:22px;
+    color:#0056ff;
+    cursor:pointer;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px 60px;
+}
+
+.field label{
+    color:#777;
+    font-size:14px;
+    display:block;
+    margin-bottom:5px;
+}
+
+.field p{
+    font-size:18px;
+    font-weight:bold;
+    color:#333;
+}
+
+@media(max-width:900px){
+
+.container{
+    width:95%;
+}
+
+.grid{
+    grid-template-columns:1fr;
+}
+
+header{
+    flex-direction:column;
+    height:auto;
+    padding:15px;
+}
+
+.left{
+    flex-direction:column;
+}
+
+nav{
+    margin-top:10px;
+}
+
+nav a{
+    margin:0 10px;
+}
+
+.right{
+    margin-top:15px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="left">
+
+        <img src="https://etravel.gov.ph/_next/static/media/logo.3b5130a1.svg" class="logo" alt="eTravel Logo">
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Data Policy</a>
+            <a href="#">FAQs</a>
+            <a href="#">Contact</a>
+            <a href="#">Logout</a>
+        </nav>
+
+    </div>
+
+    <div class="right">
+
+        <select>
+            <option>English</option>
+            <option>Filipino</option>
+        </select>
+
+        <img src="https://etravel.gov.ph/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbagong-pilipinas-logo-only.7670a408.png&w=1920&q=75" class="ph-logo" alt="Philippines Logo">
+
+    </div>
+
+</header>
+
+<div class="container">
+
+<h1>Account Settings</h1>
+
+<div class="profile">
+    <img src="https://cdn.discordapp.com/attachments/1458101932819480769/1529161677621432390/IMG_4656.jpg?ex=6ad1a68a&is=6ad0550a&hm=922151f8c82805776baa00848de000989558c29242d781c1624ddbbfed951261&" alt="Profile Picture">
+</div>
+
+<div class="section-title">
+    <h2>Personal Information</h2>
+    <span class="edit">✎</span>
+</div>
+
+<div class="grid">
+
+<div class="field">
+<label>Travel Document</label>
+<p>Philippine Passport Holder</p>
+</div>
+
+<div class="field">
+<label>Email Address</label>
+<p>zeralquiza1025@gmail.com</p>
+</div>
+
+<div class="field">
+<label>First Name</label>
+<p>ZER</p>
+</div>
+
+<div class="field">
+<label>Middle Name</label>
+<p>MONDRAGON</p>
+</div>
+
+<div class="field">
+<label>Last Name</label>
+<p>ALQUIZA</p>
+</div>
+
+<div class="field">
+<label>Suffix</label>
+<p>N/A</p>
+</div>
+
+<div class="field">
+<label>Passport Number</label>
+<p>P0996345D</p>
+</div>
+
+<div class="field">
+<label>Passport Issuing Authority</label>
+<p>Philippines</p>
+</div>
+
+<div class="field">
+<label>Passport Issued Date</label>
+<p>November 28, 2025</p>
+</div>
+
+<div class="field">
+<label>Sex</label>
+<p>MALE</p>
+</div>
+
+<div class="field">
+<label>Birth Date</label>
+<p>October 25, 2007</p>
+</div>
+
+<div class="field">
+<label>Country</label>
+<p>PH Philippines</p>
+</div>
+
+<div class="field">
+<label>Citizenship</label>
+<p>PH Philippines</p>
+</div>
+
+<div class="field">
+<label>Mobile Number</label>
+<p>+639281634453</p>
+</div>
+
+</div>
+
+<div class="section-title">
+    <h2>Permanent Country of Residence</h2>
+    <span class="edit">✎</span>
+</div>
+
+<div class="grid">
+
+<div class="field">
+<label>Country</label>
+<p>Philippines</p>
+</div>
+
+<div class="field">
+<label>Region</label>
+<p>METRO MANILA</p>
+</div>
+
+<div class="field">
+<label>State / Province</label>
+<p>METRO MANILA</p>
+</div>
+
+<div class="field">
+<label>City / Municipality</label>
+<p>CITY OF QUEZON</p>
+</div>
+
+<div class="field">
+<label>Barangay</label>
+<p>BATASAN HILLS</p>
+</div>
+
+<div class="field">
+<label>House No. / Bldg. / Street</label>
+<p>9 STOCKHOLM</p>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
